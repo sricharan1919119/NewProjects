@@ -476,6 +476,31 @@ font-weight:bold;
   margin: auto; /* Center-aligns the image inside the carousel */
 }
 
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .custom-carousel {
+    width: 100%; /* Full width for mobile view */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .custom-carousel .carousel-inner img {
+    max-height: none; /* Remove max-height constraint */
+    object-fit: cover; /* Cover the container without stretching */
+  }
+
+  .carousel-indicators button {
+    width: 10px; /* Adjust size of indicators for mobile view */
+    height: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px; /* Adjust size of control icons for mobile view */
+    height: 30px;
+  }
+}
+
+
 
 @media (min-width: 992px) {
   .hero-section-latest {
